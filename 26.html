@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<!--Font-link-->
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+
+<!--font-awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+
+    
+    <title>Admin Panel</title>
+    <style>
+        body{
+            width: 100%;
+            position: relative;
+            display: flex;
+            font-family: 'Noto Sans';
+        }
+        .sidebar{
+            width: 110px;
+            border: 1px solid #e1e1e1;
+        }
+        .think{
+            color: #275473;
+            font-family: 'Noto Sans';
+            font-size: 18px;
+        }
+        
+        .interface .navigation{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #e1e1e1;
+            min-height: 75px;
+        }
+        .profile{
+            border: 0px solid #e1e1e1;
+            border-radius: 50%;
+        }
+        .values{
+            padding: 20px 30px 0px 20px;
+        }
+        .values .val-box{
+            background:#275473;
+            padding-top: 7px;
+        }
+           .values .val-box-search{
+            background: #F4F4F4;
+            padding-top: 7px;
+            color:  #bbbbbb;
+        }
+        .values .val-box-search input{
+            background-color: #F4F4F4;
+        } 
+        .search i{
+             margin-left: 14px;
+     }
+        .student{
+            font-size: 20px;
+        }
+        .box-color{
+             background-color: #F4F4F4;
+        }
+        #ww{
+            background-color:#275473;
+            margin-top: 90px;
+           
+            color: beige;
+            width: 63%;
+            font-size: 25px;
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+    <!--SIDE BAR-->
+    <section class="sidebar h-full border-r-1"> <br>
+        <b class="think text-center">ThinkWhat </b>
+        <div style=" min-height:95vh; width: 100%;" >
+ 
+            
+             <div id="ww" class="rounded-r-full"> 
+                <br><br>
+            <button>   <img src="home.png" alt="">  </button> <br>
+            <button>  <img src="fi-rr-stats.png" alt=""> </button><br>
+            <button>  <img src="location.png" alt=""> </button><br>
+            <button>  <img src="fi-rr-user.png" alt=""> </button><br>
+            <button>  <img src="Setting.png" alt=""></button><br>
+                <br> 
+             </div>
+
+    </section>
+
+ <!--Navigation-->
+    <section class="interface w-full" >
+      <div class="navigation" >
+        <b class="text-xl px-6">Home</b>
+        
+           <div class="flex float-right">  
+             <img class="float-right profile" src="Group 236.png" alt="profile">
+              <b class="text-xl px-6">  Hello,Sk</b>
+        </div> 
+    </div>
+
+    <!--Rectangle 4-BOX -->
+    <div class="flex flex-wrap w-full">
+    <div class="values ">
+        <div class="val-box text-center h-12 w-64 rounded-lg">
+            <i class="fa fa-circle text-blue-500" aria-hidden="true"></i>
+          <small class="student text-center text-white">  Total students: 500</small>
+        </div>
+    </div>
+   
+    <div class="values">
+        <div class="val-box  text-center h-12  w-64 rounded-lg" >
+            <i class="fa fa-circle text-red-600" aria-hidden="true"></i>
+          <small class="student text-center text-white">  Course Purchase:</small>
+        </div>
+    </div>
+    <div class="values">
+        <div class="val-box text-center h-12 w-64 rounded-lg">
+            <i class="fa fa-circle text-green-500" aria-hidden="true"></i>
+          <small class="student text-center text-white"> Remaining: </small>
+        </div>
+    </div>
+    <div class="values">
+    <div class=" val-box-search text-center h-12 w-64 rounded-lg">
+       <i class="fa fa-search text-center"></i>
+        <input type="text"  placeholder="Search Student">
+      </div>
+   </div>
+
+</div>
+<!--end of rectangle boxes-->
+<div class="flex flex-wrap">
+    <div class="grid grid-cols-3 divide-x mt-4  w-52 h-10 ml-4 text-center rounded-lg box-color ">
+     <button class="hover:bg-sky-800"> Day</button>
+     <button class="hover:bg-sky-800"> Month</button>
+     <button class="hover:bg-sky-800"> Year</button>
+       </div>
+
+     <div class="grid grid-cols-5 divide-x mt-4  w-72 h-10 ml-10 text-center rounded-lg box-color ">
+    <button class="hover:bg-sky-800"> ALL</button>
+    <button class="hover:bg-sky-800"> 1D</button>
+    <button class="hover:bg-sky-800"> 1W</button>
+    <button class="hover:bg-sky-800"> 1M</button>
+    <button class="hover:bg-sky-800"> 3M</button>
+      </div>
+      <button class="w-52 h-12 ml-auto mr-16 mt-4 text-center rounded-lg box-color ">
+        <i class="fa fa-download" aria-hidden="true"></i> 
+         Download Excel
+     </button>
+</div>
+
+<!--User details Calender-->
+<div class="flex flex-wrap">
+  <div><b class="ml-4 leading-10">User Details</b> </div>
+
+  <div class="ml-auto mr-16 leading-10">
+    <b>From</b>
+      <input type="date" class=" w-32 h-6 text-sm  border border-black rounded" name="" id="">
+    
+    <b>&nbsp;&nbsp; To</b>
+      <input type="date" class=" w-32 h-6 text-sm  border border-black rounded" name="" id="">
+ 
+  </div>
+</div>
+<!--table-->
+<table class="w-full mt-8 border-collapse border border-slate-400  border-spacing-4">
+    <tr>
+        <th>User Name</th>
+        <th>Start Date</th>
+        <th>Time</th>
+        <th>Training/Internship</th>
+        <th>College</th>
+        <th>End Date</th>
+        <th>Fee</th>
+        <th>ID Number</th>
+    </tr>
+    <tr>
+         <td>Somani Keshari</td>
+         <td>02/07/2220 </td>
+         <td>04:00PM</td>
+         <td>UP2Vs4523</td>
+         <td>VBSPU</td>
+         <td>15/04/2223</td>
+         <td>5022</td>
+         <td>5236987145</td>
+    </tr>
+
+</table>
+</section>
+
+
+</body>
+</html>
